@@ -30,13 +30,13 @@ until response == 0
 
   case response
   when 1
-    show_guests
+    show_guests(chain)
   when 2
-    check_in
+    check_in(chain)
   when 3
-    check_out
+    check_out(chain)
   when 4
-    show_income
+    show_income(chain)
   else 
     puts "Invalid option"
   end
