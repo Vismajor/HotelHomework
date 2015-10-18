@@ -1,14 +1,14 @@
 def check_in(chain)
+  puts "Please type in the guest's name: "
+  guest_name = gets.chomp
   puts
-  puts "Please choose hotel"
+  puts "Please choose room: "
   puts
-  puts chain.list_hotels
-end
+  print chain.list_of_hotels
+  chosen_room = gets.chomp
+  puts
 
-
-
-def list_hotels(chain)
-  puts chain.list_hotels
+  hotel.hotel_checking_in(guest_name, chosen_room)
 end
 
 
