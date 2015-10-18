@@ -15,9 +15,9 @@ hotel_awesome = Hotel.new name: 'Hotel Awesomest', address: 'New York'
 #hotel_fantastic = Hotel.new name: 'Hotel Fantasticest', address: 'Tokyo'
 
 hotel_awesome.add_room(Room.new(beds: 1, room_id: "ar1"))
-#hotel_awesome.add_room(Room.new(beds: 1, room_id: "ar2"))
-#hotel_awesome.add_room(Room.new(beds: 2, room_id: "ar3"))
-#hotel_awesome.add_room(Room.new(beds: 2, room_id: "ar4"))
+hotel_awesome.add_room(Room.new(beds: 1, room_id: "ar2"))
+hotel_awesome.add_room(Room.new(beds: 2, room_id: "ar3"))
+hotel_awesome.add_room(Room.new(beds: 2, room_id: "ar4"))
 
 chain.add_hotel(hotel_awesome)
 #chain.add_hotel(hotel_terrific)
