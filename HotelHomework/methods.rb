@@ -5,7 +5,7 @@ def show_guests(chain)
   puts
   hotel = chain.hotels[hotel_name]
   puts
-  print hotel.guest_list
+  puts hotel.guest_list
 end
 
 def check_in(chain)

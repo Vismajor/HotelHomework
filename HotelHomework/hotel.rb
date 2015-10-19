@@ -27,7 +27,7 @@ class Hotel
   end
 
   def guest_list
-    rooms.map { |id, room| room.guests}.join("\n")
+    rooms.map { |id, room| room.pretty_string}.join("\n")
   end
 
   def add_room(room)
@@ -35,7 +35,7 @@ class Hotel
   end
 
   def pretty_string
-    puts "#{name} === Rooms: #{rooms}"
+    puts "#{name}"
   end
 
 
