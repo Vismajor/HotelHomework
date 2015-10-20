@@ -1,0 +1,22 @@
+
+
+<% if @convert_result %>
+<h1>The converted result is <%= @convert_result %></h1>
+<%end%>
+
+<form method="get" action="/squarerootcalc", "/measurement">
+
+  <input type="float" name="first_number" placeholder="number" step="0.01">
+
+  <input type="radio" name="convert" value="sqrt"> Square root
+  <input type="radio" name="convert" value="m_to_k"> Miles to kilometers
+  <input type="radio" name="convert" value="k_to_m"> Kilometers to miles
+  <input type="radio" name="convert" value="f_to_m"> Feet to meters
+  <input type="radio" name="convert" value="m_to_f"> Meters to feet
+  <input type="radio" name="convert" value="i_to_c"> Inches to centimeters
+  <input type="radio" name="convert" value="c_to_i"> Centimeters to inches
+  <button>CALCULATE!!!</button>
+
+</form>
+
+
