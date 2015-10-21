@@ -1,0 +1,15 @@
+<section>
+  <% @items.each do |item| %>
+    <article>
+      <dl>
+        <dt> Item: </dt>
+        <dd><%= item['item'] %> </dd>
+      </dl>
+      <a href="/items/<%= item['id'] %>"><button type="button"  id="button">Show</button></a><br>
+      <a href="/items/<%= item['id'] %>/edit"><button type="button"  id="button">Edit</button></a><br>
+      <form method='post' action='/items/<%= item['id'] %>/delete'><button id="button">Delete</button></form>
+    </article>
+  <% end %>
+</section>
+
+
